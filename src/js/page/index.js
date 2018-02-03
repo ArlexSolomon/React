@@ -8,7 +8,6 @@ class Reservation extends React.Component {
         userName: "",
         password: ""
       };
-  
       this.handleInputChange = this.handleInputChange.bind(this);
     }
   
