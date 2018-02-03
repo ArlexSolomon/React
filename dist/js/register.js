@@ -1,4 +1,4 @@
-webpackJsonp([1],[
+webpackJsonp([0],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7619,20 +7619,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(27)(false);
-// imports
-
-
-// module
-exports.push([module.i, "body{\n\tmargin: 0;\n\tpadding: 0;\n\theight: 100%;\n}\ninput{\n  height: 4rem;\n  width: 90%;\n  background-color: transparent;\n  border: 0;\n  font-size: 3rem;\n  margin: 1.5rem 1rem;\n  outline: none;\n}\n.input{\n  margin: 0 auto;\n  margin-bottom: 2rem;\n  height: 7rem;\n  width: 86%;\n  background-color: rgba(255,255,255,0.1);\n  border: 2px solid rgba(255,255,255,0.3);\n}\n.root{\n  margin: 0 auto;\n}\n.loginButton{\n  margin: 0 auto;\n  height: 7rem;\n  width: 86%;\n  text-align: center;\n  background-color: transparent;\n  border: 2px solid rgba(255,255,255,0.3);\n  font-size: 3rem;\n}\n.inputArea{\n  text-align: center;\n}\n.loginText{\n  margin-top: 1.5rem;\n}", ""]);
-
-// exports
-
-
-/***/ }),
+/* 26 */,
 /* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8192,8 +8179,23 @@ module.exports = function (css) {
 };
 
 /***/ }),
-/* 30 */,
-/* 31 */
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(27)(false);
+// imports
+
+
+// module
+exports.push([module.i, "body{\n\tmargin: 0;\n\tpadding: 0;\n\theight: 100%;\n}\n#subButton{\n\tposition: fixed;\n\tbottom: 0;\n\twidth: 100%;\n}\n.reg{\n\ttext-align: center;\n\tmargin: 0 auto;\n}\n.submit{\n\tmargin: 0 auto;\n\twidth: 86%;\n\theight: 6rem;\n\ttext-align: center;\n\tfont-size: 3rem;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 31 */,
+/* 32 */,
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8207,7 +8209,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(17);
 
-__webpack_require__(32);
+__webpack_require__(34);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -8228,8 +8230,9 @@ var Reservation = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Reservation.__proto__ || Object.getPrototypeOf(Reservation)).call(this, props));
 
     _this.state = {
-      userName: "",
-      password: ""
+      phoneNumber: "",
+      verificationCode: "",
+      step: 0
     };
     _this.handleInputChange = _this.handleInputChange.bind(_this);
     return _this;
@@ -8247,74 +8250,63 @@ var Reservation = function (_React$Component) {
   }, {
     key: 'handleClick',
     value: function handleClick() {
+      this.setState({ step: this.state.step + 1 });
       var user = {
-        userName: this.state.userName,
-        password: this.state.password
+        userName: this.state.phoneNumber,
+        password: this.state.verificationCode
       };
       console.log(user);
     }
   }, {
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'inputArea' },
-        _react2.default.createElement(
+      if (this.state.step == 0) {
+        return _react2.default.createElement(
           'div',
-          { className: 'input' },
-          _react2.default.createElement('input', {
-            name: 'userName',
-            type: 'text',
-            value: this.state.userName,
-            onChange: this.handleInputChange })
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'input' },
-          _react2.default.createElement('input', {
-            name: 'password',
-            type: 'password',
-            value: this.state.password,
-            onChange: this.handleInputChange })
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'loginButton', onClick: this.handleClick.bind(this) },
+          { className: 'reg' },
           _react2.default.createElement(
-            'div',
-            { className: 'loginText' },
-            '\u767B\u9646'
+            'a',
+            { className: 'submit', onClick: this.handleClick.bind(this) },
+            '\u4E0B\u4E00\u6B65'
           )
-        ),
-        _react2.default.createElement(
+        );
+      } else {
+        return _react2.default.createElement(
           'div',
           null,
+          _react2.default.createElement('input', {
+            name: 'phoneNumber',
+            type: 'number',
+            value: this.state.phoneNumber,
+            onChange: this.handleInputChange }),
+          _react2.default.createElement('br', null),
+          _react2.default.createElement('input', {
+            name: 'verificationCode',
+            type: 'number',
+            value: this.state.password,
+            onChange: this.handleInputChange }),
+          _react2.default.createElement('br', null),
           _react2.default.createElement(
-            'a',
-            null,
-            '\u5FD8\u8BB0\u5BC6\u7801'
-          ),
-          _react2.default.createElement(
-            'a',
-            { href: 'view/register.html' },
-            '\u6CE8\u518C'
+            'button',
+            { onClick: this.handleClick.bind(this) },
+            '\u4E0B\u4E00\u6B65'
           )
-        )
-      );
+        );
+      }
     }
   }]);
 
   return Reservation;
 }(_react2.default.Component);
 
-(0, _reactDom.render)(_react2.default.createElement(Reservation, null), document.getElementById('root'));
+(0, _reactDom.render)(_react2.default.createElement(Reservation, null), document.getElementById('subButton'));
 
 /***/ }),
-/* 32 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(26);
+var content = __webpack_require__(30);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -8333,8 +8325,8 @@ var update = __webpack_require__(28)(content, options);
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(26, function() {
-		var newContent = __webpack_require__(26);
+	module.hot.accept(30, function() {
+		var newContent = __webpack_require__(30);
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -8360,4 +8352,4 @@ if(true) {
 }
 
 /***/ })
-],[31]);
+],[33]);

@@ -1,0 +1,21 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+#subButton{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.reg{
+	text-align: center;
+	margin: 0 auto;
+}
+.submit{
+	margin: 0 auto;
+	width: 86%;
+	height: 6rem;
+	text-align: center;
+	font-size: 3rem;
+}

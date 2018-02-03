@@ -35,7 +35,7 @@ module.exports = {
       {
         test: /\.css$/,
         //配置css的抽取器、加载器。'-loader'可以省去
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader') 
+        loader: 'style-loader!css-loader'
       }, {
         test: /\.less$/i,
         //配置less的抽取器、加载器。中间!有必要解释一下，
@@ -105,7 +105,7 @@ module.exports = {
   devServer: {
     contentBase: './',
     host: 'localhost',
-    port: 8080, //默认8080
+    port: 3000, //默认8080
     inline: true, //可以监控js变化
     hot: true, //热启动
     disableHostCheck: true,
