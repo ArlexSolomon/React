@@ -1,52 +1,43 @@
-body{
-	margin: 0;
-	padding: 0;
-	height: 100%;
-}
-#subButton{
-	position: fixed;
-	width: 100%;
-}
-.reg{
-	text-align: center;
-	margin: 0 auto;
-}
-.submit{
-	margin: 0 auto;
-	width: 86%;
-	height: 6rem;
-	text-align: center;
-	font-size: 3rem;
-}
 .input{
     margin: 0 auto;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     height: 7rem;
     width: 86%;
     background-color: rgba(255,255,255,0.2);
     border: 2px solid rgba(255,255,255,0.5);
 }
-input{
-	text-align: center;
-	color: white;
-	height: 4rem;
-	width: 90%;
-	background-color: transparent;
-	border: 0;
-	font-size: 3rem;
-	margin: 1.5rem 1rem;
-	outline: none;
-}
-.getCode{
+.loginButton{
     margin: 0 auto;
+    margin-bottom: 2rem;
     height: 7rem;
     width: 86%;
-    background-color: rgba(255,255,255,0.7);
-    border: 2px solid rgba(255,255,255,0.5);
     text-align: center;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    font-size: 3rem;
 }
-.getCode>.types{
-	color: black;
+.inputArea{
+    margin-top: 1rem;
+    text-align: center;
+  }
+.loginText{
+    color: white;
+    margin-top: 1.5rem;
+}
+.register{
+    float: right;
+    margin-right: 4rem;
+    color: white;
+    font-size: 2rem;
+}
+.forgetPassword{
+    float: left;
+    margin-left: 4rem;
+    color: white;
+    font-size: 2rem;
+}
+a{
+    text-decoration:none;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     color: rgb(255, 255, 255); opacity:1; font-family: -webkit-pictograph;

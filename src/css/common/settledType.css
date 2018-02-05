@@ -1,0 +1,55 @@
+.types{
+    font-size: 3rem;
+    color: white;
+    margin-top: 1.5rem;
+}
+.settleInTypeOn{
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    height: 7rem;
+    width: 86%;
+    background-color: rgba(255,255,255,0.2);
+    border: 2px solid rgba(255,255,255,0.5);
+    text-align: center;
+}
+.settleInType{
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    height: 7rem;
+    width: 86%;
+    background-color: rgba(255,255,255);
+    border: 2px solid rgba(255,255,255,0.5);
+    text-align: center;
+}
+.nextButton{
+    margin: 0 auto;
+    margin-top: 18rem;
+    height: 7rem;
+    width: 86%;
+    background-color: rgba(255,255,255,0.9);
+    border: 2px solid rgba(255,255,255,0.5);
+    text-align: center;
+}
+.nextButton1{
+    margin: 0 auto;
+    margin-top: 6.7rem;
+    height: 7rem;
+    width: 86%;
+    background-color: rgba(255,255,255,0.9);
+    border: 2px solid rgba(255,255,255,0.5);
+    text-align: center;
+}
+.nextButton>.types{
+    font-size: 3rem;
+    color: black;
+    margin-top: 1.5rem;
+}
+.nextButton1>.types{
+    font-size: 3rem;
+    color: black;
+    margin-top: 1.5rem;
+}
+.settleItems{
+    margin: 0 auto;
+    margin-top: 14rem;
+}

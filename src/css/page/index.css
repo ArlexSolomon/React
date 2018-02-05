@@ -19,70 +19,13 @@ img{
   margin-bottom: 4rem;
   height: 20rem;
 }
-a{
-  text-decoration:none;
-}
-#register{
-  position: fixed;
-  bottom: 0;
-  height: 7rem;
-  width: 100%;
-  background-color: rgba(255,255,255,0.2);
-  border: 2px solid rgba(255,255,255,0.5);
-}
-.register{
+#loginLogo{
   margin: 0 auto;
 }
-.registerText{
+.loginImg{
   text-align: center;
-  margin-top: 2rem;
-}
-.input{
-  margin: 0 auto;
-  margin-bottom: 2rem;
-  height: 7rem;
-  width: 86%;
-  background-color: rgba(255,255,255,0.2);
-  border: 2px solid rgba(255,255,255,0.5);
+  margin-top: 6rem;
 }
 .root{
   margin: 0 auto;
-}
-.loginButton{
-  margin: 0 auto;
-  margin-bottom: 2rem;
-  height: 7rem;
-  width: 86%;
-  text-align: center;
-  background-color: transparent;
-  border: 2px solid rgba(255,255,255,0.5);
-  font-size: 3rem;
-}
-.inputArea{
-  margin-top: 12rem;
-  text-align: center;
-}
-.loginText{
-  color: white;
-  margin-top: 1.5rem;
-}
-.forgetPassword{
-  color: white;
-  font-size: 2rem;
-}
-
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: rgb(255, 255, 255); opacity:1; font-family: -webkit-pictograph;
-}
-
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color: rgb(255, 255, 255);opacity:1; font-family: -webkit-pictograph;
-}
-
-input:-ms-input-placeholder{
-  color: rgb(255, 255, 255);opacity:1; font-family: -webkit-pictograph;
-}
-
-input::-webkit-input-placeholder{
-  color: rgb(255, 255, 255);opacity:1; font-family: -webkit-pictograph;
 }
